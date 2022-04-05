@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .navbar_top {
+            height: 80px;
+            background-color: black;
+        }
+
+        .navbar_bottom {
+            height: 60px;
+            background-color: rgb(231, 61, 61);
+        }
+
+        ul {
+            margin-top: 32px;
+            padding: 4px 8px;
+        }
+
+        ul li {
+            font-size: 26px;
+
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+
+        .on_top {
+            position: fixed;
+            bottom: 20px;
+            right: 16px;
+        }
+        .close {
+            display: none;
+        }
+        @media screen and (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
+        .position{
+            width: 100px;
+            height: 100px;
+            background-color: #555;
+            animation: fadeIn 0.8s ease-in-out;
+          /*  animation: fadeOut 0.8s ease-in-out;*/
+        }
+        .close-btn{
+            margin: 8px 12px;
+            font-size: 18px;
+            padding: 8px 16px;
+            outline: none;
+            border: none;
+            border-radius: 10px ;
+            color: #fff;
+            background-color: rgb(80, 190, 80);
+            cursor: pointer;
+            transition: background-color 0.3s linear;
+            
+        }
+        .close-btn:hover{
+            background-color: rgb(50, 124, 50);
+        }
+        .position.close {
+            display: none;
+        }
+        @keyframes fadeIn{
+            from{
+                transform: translateY(-80px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeOut{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar_top">
+        </div>
+        <div class="navbar_bottom">
+        </div>
+    </header>
+    <div class="container">
+        <button class="close-btn">Close</button>
+        <div class="position close">
+            <span class="position__box">
+            </span>
+        </div>
+        <ul>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+            <li>Đây là rap viêt mùa 2 đã quay trở lại sau 4 tháng vì đại dịch</li>
+        </ul>
+    </div>
+    <div class="on_top close">
+        <button class="btn">Go to top</button>
+    </div>
+
+    <script>
+        const navTop = document.querySelector('.navbar_top')
+        const navBot = document.querySelector('.navbar_bottom')
+        const divBtn = document.querySelector('.on_top')
+        const btn = document.querySelector('.btn')
+        const btnClose = document.querySelector('.close-btn')
+        const box = document.querySelector('.position')
+
+
+        btnClose.onclick = () =>{
+            box.classList.toggle('close')
+        }
+
+
+        const heightNavTop = navTop.clientHeight
+
+        btn.onclick = () => {
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY
+            if (y >= heightNavTop) {
+                navBot.classList.add('fixed')
+                divBtn.classList.remove('close')
+            } else {
+                navBot.classList.remove('fixed')
+                divBtn.classList.add('close')
+            }
+        })
+    </script>
+</body>
+
+</html>

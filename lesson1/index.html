@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-c">
+        <header class="header">
+            <div class="header-img">
+                <img src="https://cdn.pixabay.com/photo/2019/09/19/12/23/bird-4489182__340.png" alt="">
+            </div>
+            <div class="header-menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#" class="menu-link">Trang chủ</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Tin tức</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Thông báo</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Đăng nhập</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Cài đặt</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <div class="app">
+
+            <div class="app-nav">
+                <div class="fixed-header">
+                    <div class="container-input">
+                        <label for="">STT</label>
+                        <input type="text" name="id">
+                    </div>
+                    <div class="container-input">
+                        <label for="">ID</label>
+                        <input type="text" name="id-goc">
+                    </div>
+                    <div class="container-input">
+                        <label for="">Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="container-input">
+                        <label for="">Food</label>
+                        <input type="text" name="food">
+                    </div>
+                    <div class="container-input">
+                        <label for="">Avatar</label>
+                        <input type="text" name="avatar">
+                    </div>
+                    <div class="container-btn ">
+                        <button class="btn" id="create">Create</button>
+                        <button class="btn" id="save">Save</button>
+                        <button class="btn" id="refresh">Refresh</button>
+                        <button class="btn" id="seach">Seach</button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-body">
+                <h2 style="padding: 24px 0;">Danh sách động vật</h2>
+                <div class="container">
+                    <ul id="list-animal">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="app-table">
+                <table id="table">
+                </table>
+            </div>
+            <div class="app-QC">
+                <div class="fixed-QC">
+                    <div class="count">
+                        <h2>Tổng số loài</h2>
+                        <span class="count-numer">0</span>
+                    </div>
+                    <div class="app-QC-btn">
+                        <button class="btn btn-pro btn-table ">Dạng bảng</button>
+                        <button class="btn btn-pro btn-grid">Dạng danh sách</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-main">
+            <button class="modal-close">X</button>
+            <div class="modal-container">
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
