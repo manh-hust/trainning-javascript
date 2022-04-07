@@ -1,5 +1,6 @@
 // ======STRING=======
 // var newStr = myStr.slice(-4);
+// var boolean = nyStr.includes('...', start);
 // var newStr = myStr.replace("tam giac", "thanks");
 // var newStr = myStr.trim();
 // var newStr = myStr.split(' '); ==> Chuyen chuoi thanh mang
@@ -69,26 +70,113 @@
 
 // Constructor
 
-function User(name, age, avatar) {
-    this.name = name;
-    this.age = age;
-    this.avatar = avatar;
-}
+// function User(name, age, avatar) {
+//     this.name = name;
+//     this.age = age;
+//     this.avatar = avatar;
+// }
 
-class Animal{
-    constructor(name, food, like){
-        this.name = name, 
-        this.food = food,
-        this.like = like
-    }
-}
-User.prototype.address = "HP";
+// class Animal{
+//     constructor(name, food, like){
+//         this.name = name, 
+//         this.food = food,
+//         this.like = like
+//     }
+// }
+// User.prototype.address = "HP";
 
-const hito = new User('Hito', 20, 'congaucute');
-const jin = new User('Jin', 10, 'conchocute');
-const dog = new Animal('Dog', 'beef', 'cat');
+// const hito = new User('Hito', 20, 'congaucute');
+// const jin = new User('Jin', 10, 'conchocute');
+// const dog = new Animal('Dog', 'beef', 'cat');
 
-jin.address = "HN"
+// jin.address = "HN"
 
-console.log(User.prototype.constructor === User);
+// console.log(User.prototype.constructor === User);
+
+
+
+// var myInfo = {
+//     name: "Manh",
+//     age: 18,
+//     address: "HP",
+// }
+
+// var arr = [
+//     'HN',
+//     'HP',
+//     'ND',
+//     'BG',
+// ]
+
+// for (const iterator of myInfo) {
+//   console.log(iterator);
+// }
+
+
+// ====================== Array =============================
+// forEach()
+// every() <==> some()
+// find() <==> filter()
+// map()
+// reduce()
+
+
+// var courses = [
+//     {
+//         id: 1,
+//         name: 'JavaScrip',
+//         coin: 0
+//     },
+//     {
+//         id: 2,
+//         name: 'Java',
+//         coin: 200
+//     },
+//     {
+//         id: 3,
+//         name: 'Python',
+//         coin: 300
+//     },
+//     {
+//         id: 4,
+//         name: 'C++',
+//         coin: 0
+//     },
+// ]
+
+// var isFree =  courses.some((item, index) => {
+//     console.log(index);
+//     return item.coin === 0;
+// })
+
+// var newArr = courses.find((item) => {
+//     return item.coin === 0;
+// })
+
+// var newArr = courses.map((item, index, originArr) => {
+//     return{
+//         ...item,
+//         school: 'BKHN'
+//     }
+// })
+
+// console.log(newArr);
+
+// const total = courses.reduce((init, item) => {
+//     return init + item.coin;
+// }, 400)
+
+// console.log("Toal: ", total);
+
+// var depthArr = [1, 2, 3, [4, 5], 6, [7, 8, 9]];
+
+// var a = 1, b= 2;
+
+// var newArr = depthArr.reduce(function(init, item){
+//     return init.concat(item)
+// }, [])
+// console.log(arr);
+
+console.log([document]);
+console.log(document.all);
 
