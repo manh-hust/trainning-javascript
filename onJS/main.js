@@ -177,6 +177,28 @@
 // }, [])
 // console.log(arr);
 
-console.log([document]);
-console.log(document.all);
+
+//=================== DOM =========================
+
+const nodeH1 = document.getElementById('text')
+const nodeH2 = document.querySelector('#text')
+
+const listH1 = document.querySelectorAll('.title')
+const listH2 = document.getElementsByClassName('title')
+
+const forms = document.forms
+
+nodeH2.setAttribute('data', 123000);
+nodeH2.setAttribute('data2', 123111);
+
+// console.log(nodeH2.getAttribute('data'));
+// nodeH2.innerHTML = 'New JavaScrip'
+// nodeH2.textContent = 'New JavaScrip'
+// console.log(nodeH2.textContent);
+// console.log(nodeH2.innerText);
+
+const box = document.querySelector('.box');
+console.log(box.outerHTML);
+// console.log(box.innerHTML);
+// box.innerHTML = '<h1>Box</h1>'
 
