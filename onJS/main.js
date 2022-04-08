@@ -186,10 +186,10 @@ const nodeH2 = document.querySelector('#text')
 const listH1 = document.querySelectorAll('.title')
 const listH2 = document.getElementsByClassName('title')
 
-const forms = document.forms
+// const forms = document.forms
 
-nodeH2.setAttribute('data', 123000);
-nodeH2.setAttribute('data2', 123111);
+// nodeH2.setAttribute('data', 123000);
+// nodeH2.setAttribute('data2', 123111);
 
 // console.log(nodeH2.getAttribute('data'));
 // nodeH2.innerHTML = 'New JavaScrip'
@@ -198,7 +198,19 @@ nodeH2.setAttribute('data2', 123111);
 // console.log(nodeH2.innerText);
 
 const box = document.querySelector('.box');
-console.log(box.outerHTML);
+// console.log(box.outerHTML);
 // console.log(box.innerHTML);
-// box.innerHTML = '<h1>Box</h1>'
+// box.outerHTML = '<h1>Box</h1>'
 
+// console.log(box.attributes);
+// console.log(box.classList.add('hello'));
+// box.classList.add('hello')
+
+// box.setAttribute('hidden', true)
+// box.style.color = 'red'
+const button = document.querySelector('button')
+
+button.addEventListener('click', function(){
+    box.classList.toggle('red-text')
+    // console.log(box.classList);
+})
